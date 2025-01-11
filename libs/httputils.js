@@ -35,19 +35,19 @@ function _createPokemonCardDiv(cardclass, cardId, pokemon) {
 	        HP: ${pokemon.ivs[Stat["HP"]]}, ATK: ${pokemon.ivs[Stat["ATK"]]}, DEF: ${pokemon.ivs[Stat["DEF"]]}
 	      </div>
 	      <table style="border:0px solid transparent;">
-					<tbody>
-						<tr>
-							<td>
-								<div class="text-base">
-	        				SPE: ${pokemon.ivs[Stat["SPD"]]}, SPD: ${pokemon.ivs[Stat["SPDEF"]]}, SPA: ${pokemon.ivs[Stat["SPATK"]]}
-	      				</div>
-							</td>
-							<td>
-								<a style="text-align: end; display: block;" class="text-base" href="https://wiki.pokerogue.net/pokedex:${pokemon.id}">wiki</a>
-							</td>
-							</tr>
-					</tbody>
-				</table>	        
+	        <tbody>
+	          <tr>
+	            <td>
+	              <div class="text-base">
+	                SPE: ${pokemon.ivs[Stat["SPD"]]}, SPD: ${pokemon.ivs[Stat["SPDEF"]]}, SPA: ${pokemon.ivs[Stat["SPATK"]]}
+	              </div>
+	            </td>
+	            <td>
+	              <a style="text-align: end; display: block;" class="text-base" href="https://wiki.pokerogue.net/pokedex:${pokemon.id}">wiki</a>
+	            </td>
+	            </tr>
+	        </tbody>
+	      </table>	        
 	      ${(_weather.type && _weather.turnsLeft) ? 
 	        `<div class="text-base">_weather: ${_weather.type}, Turns Left: ${_weather.turnsLeft}</div>` 
 	      : ''}
